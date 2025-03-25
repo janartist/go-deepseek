@@ -9,10 +9,10 @@ type ErrorResponse struct {
 }
 
 type Error struct {
-	Message string `json:"message"`
-	Type    string `json:"type"`
-	Param   any    `json:"param"`
-	Code    string `json:"code"`
+	Message string      `json:"message"`
+	Type    string      `json:"type"`
+	Param   interface{} `json:"param"`
+	Code    string      `json:"code"`
 }
 
 func ParseError(errBody []byte) (*ErrorResponse, error) {

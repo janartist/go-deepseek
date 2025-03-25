@@ -26,7 +26,7 @@ type ChatCompletionsRequest struct {
 	Temperature      *float32        `json:"temperature,omitempty"`
 	TopP             *float32        `json:"top_p,omitempty"`
 	Tools            *[]Tool         `json:"tools,omitempty"`
-	ToolChoice       any             `json:"tool_choice,omitempty"`
+	ToolChoice       interface{}     `json:"tool_choice,omitempty"`
 	Logprobs         bool            `json:"logprobs,omitempty"`
 	TopLogprobs      *int            `json:"top_logprobs,omitempty"`
 }
@@ -77,9 +77,9 @@ type Tool struct {
 }
 
 type ToolFunction struct {
-	Name        string `json:"name"`
-	Description string `json:"description,omitempty"`
-	Parameters  any    `json:"parameters"`
+	Name        string      `json:"name"`
+	Description string      `json:"description,omitempty"`
+	Parameters  interface{} `json:"parameters"`
 }
 
 type ToolChoiceString string
@@ -91,8 +91,4 @@ type ToolChoiceNamed struct {
 
 type ToolChoiceFunction struct {
 	Name string `json:"name"`
-}
-
-func ToPtr[T any](v T) *T {
-	return &v
 }
