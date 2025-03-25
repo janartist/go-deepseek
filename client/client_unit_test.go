@@ -3,7 +3,7 @@ package client
 import (
 	"testing"
 
-	"github.com/janartist/go-deepseek/request"
+	"github.com/janartist/deepseek/request"
 	"github.com/stretchr/testify/assert"
 )
 

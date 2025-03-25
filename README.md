@@ -2,24 +2,24 @@
 
 Go-deepseek is a Go client for the [DeepSeek API](https://api-docs.deepseek.com/); supporting DeepSeek-V3, DeepSeek-R1, and more, with both streaming and non-streaming options. This **production-ready** client is actively maintained, with ongoing bug fixes and feature enhancements. 
 
-![go-deepseek-design](https://github.com/user-attachments/assets/346806ad-7617-4690-b6b4-0b49707852d8)
+![deepseek-design](https://github.com/user-attachments/assets/346806ad-7617-4690-b6b4-0b49707852d8)
 
 ## Demo
 
-**30 seconds deepseek-demo ([code](https://github.com/janartist/go-deepseek-demo/)):** 
+**30 seconds deepseek-demo ([code](https://github.com/janartist/deepseek-demo/)):** 
 
-left-side browser with **[chat.deepseek.com](https://chat.deepseek.com/)** **v/s** **[go-deepseek](https://github.com/janartist/go-deepseek)** in right-side terminal.
+left-side browser with **[chat.deepseek.com](https://chat.deepseek.com/)** **v/s** **[deepseek](https://github.com/janartist/deepseek)** in right-side terminal.
 
 https://github.com/user-attachments/assets/baa05145-a13c-460d-91ce-90129c5b32d7
 
 ## Install
 ```
-go get github.com/janartist/go-deepseek
+go get github.com/janartist/deepseek
 ```
 
 ## Usage
 
-![go-deepseek-flow](https://github.com/user-attachments/assets/dfa6fc98-65f2-4a08-ab13-8c0732ac8302)
+![deepseek-flow](https://github.com/user-attachments/assets/dfa6fc98-65f2-4a08-ab13-8c0732ac8302)
 
 Here’s an example of sending a "Hello Deepseek!" message using `model=deepseek-chat` (**DeepSeek-V3 model**) and `stream=false`
 
@@ -30,8 +30,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/janartist/go-deepseek"
-	"github.com/janartist/go-deepseek/request"
+	"github.com/janartist/deepseek"
+	"github.com/janartist/deepseek/request"
 )
 
 func main() {
@@ -63,7 +63,7 @@ First, copy above code in `main.go`
 Replace `your_deepseek_api_token` with valid api token
 
 $ go mod init
-$ go get github.com/janartist/go-deepseek
+$ go get github.com/janartist/deepseek
 
 $ go run main.go
 output => Hello! How can I assist you today? 😊

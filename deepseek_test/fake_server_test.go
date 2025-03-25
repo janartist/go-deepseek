@@ -6,7 +6,7 @@ import (
 	"net/http/httptest"
 	"strings"
 
-	"github.com/janartist/go-deepseek/internal"
+	"github.com/janartist/deepseek/internal"
 )
 
 func NewFakeServer(filePath string) *httptest.Server {

@@ -8,8 +8,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/janartist/go-deepseek"
-	"github.com/janartist/go-deepseek/request"
+	"github.com/janartist/deepseek"
+	"github.com/janartist/deepseek/request"
 )
 
 func main() {

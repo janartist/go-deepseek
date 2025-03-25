@@ -5,14 +5,14 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/janartist/go-deepseek"
-	"github.com/janartist/go-deepseek/request"
+	"github.com/janartist/deepseek"
+	"github.com/janartist/deepseek/request"
 )
 
 /*
 Example Details:
 
-Example shows how to use FakeCallbackClient to test user feature which is using go-deepseek client.
+Example shows how to use FakeCallbackClient to test user feature which is using deepseek client.
 
 Here, Greeter() is user feature when invoke from main() needs deepseek client with DEEPSEEK_API_KEY
 
