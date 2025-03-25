@@ -10,14 +10,11 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/janartist/go-deepseek"
 	"github.com/janartist/go-deepseek/config"
 	"github.com/janartist/go-deepseek/internal"
 	"github.com/janartist/go-deepseek/request"
 	"github.com/janartist/go-deepseek/response"
 )
-
-var _ deepseek.Client = (*Client)(nil)
 
 type Client struct { // TODO: VN -- move to internal pkg
 	*http.Client

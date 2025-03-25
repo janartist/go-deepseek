@@ -15,6 +15,8 @@ const (
 	DEEPSEEK_REASONER_MODEL = "deepseek-reasoner"
 )
 
+var _ Client = (*client.Client)(nil)
+
 // Client interface defines methods for interacting with the DeepSeek API.
 type Client interface {
 	// CallChatCompletionsChat calls chat api with model=deepseek-chat and stream=false.
