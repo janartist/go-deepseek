@@ -43,7 +43,7 @@ func (c *Client) CallChatCompletionsChat(ctx context.Context, chatReq *request.C
 	if ctx == nil {
 		ctx = context.Background()
 	}
-	if err := validateChatParams(chatReq, false, "go-deepseek-chat"); err != nil {
+	if err := validateChatParams(chatReq, false, "deepseek-chat"); err != nil {
 		return nil, err
 	}
 	if !c.DisableRequestValidation {
@@ -79,7 +79,7 @@ func (c *Client) StreamChatCompletionsChat(ctx context.Context, chatReq *request
 	if ctx == nil {
 		ctx = context.Background()
 	}
-	if err := validateChatParams(chatReq, true, "go-deepseek-chat"); err != nil {
+	if err := validateChatParams(chatReq, true, "deepseek-chat"); err != nil {
 		return nil, err
 	}
 	if !c.DisableRequestValidation {
@@ -104,7 +104,7 @@ func (c *Client) CallChatCompletionsReasoner(ctx context.Context, chatReq *reque
 	if ctx == nil {
 		ctx = context.Background()
 	}
-	if err := validateChatParams(chatReq, false, "go-deepseek-reasoner"); err != nil {
+	if err := validateChatParams(chatReq, false, "deepseek-reasoner"); err != nil {
 		return nil, err
 	}
 	if !c.DisableRequestValidation {
@@ -140,7 +140,7 @@ func (c *Client) StreamChatCompletionsReasoner(ctx context.Context, chatReq *req
 	if ctx == nil {
 		ctx = context.Background()
 	}
-	if err := validateChatParams(chatReq, true, "go-deepseek-reasoner"); err != nil {
+	if err := validateChatParams(chatReq, true, "deepseek-reasoner"); err != nil {
 		return nil, err
 	}
 	if !c.DisableRequestValidation {
@@ -162,7 +162,7 @@ func (c *Client) StreamChatCompletionsReasoner(ctx context.Context, chatReq *req
 
 func (c *Client) PingChatCompletions(ctx context.Context, inputMessage string) (outputMessge string, err error) {
 	chatReq := &request.ChatCompletionsRequest{
-		Model:  "go-deepseek-chat",
+		Model:  "deepseek-chat",
 		Stream: false,
 		Messages: []*request.Message{
 			{

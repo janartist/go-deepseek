@@ -35,7 +35,7 @@ import (
 )
 
 func main() {
-	client, _ := go-deepseek.NewClient("your_go-deepseek_api_token")
+	client, _ := deepseek.NewClient("your_deepseek_api_token")
 
 	chatReq := &request.ChatCompletionsRequest{
 		Model:  deepseek.DEEPSEEK_CHAT_MODEL,
