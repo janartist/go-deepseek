@@ -11,7 +11,7 @@ import (
 const DEFAULT_TIMEOUT_SECONDS = 120
 
 const (
-	DEEPSEEK_CHAT_MODEL     = "go-deepseek-chat"
+	DEEPSEEK_CHAT_MODEL     = "deepseek-chat"
 	DEEPSEEK_REASONER_MODEL = "deepseek-reasoner"
 )
 
