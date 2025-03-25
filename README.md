@@ -6,15 +6,15 @@ Go-deepseek is a Go client for the [DeepSeek API](https://api-docs.deepseek.com/
 
 ## Demo
 
-**30 seconds deepseek-demo ([code](https://github.com/go-deepseek/deepseek-demo/)):** 
+**30 seconds deepseek-demo ([code](https://github.com/janartist/go-deepseek-demo/)):** 
 
-left-side browser with **[chat.deepseek.com](https://chat.deepseek.com/)** **v/s** **[go-deepseek](https://github.com/go-deepseek/deepseek)** in right-side terminal.
+left-side browser with **[chat.deepseek.com](https://chat.deepseek.com/)** **v/s** **[go-deepseek](https://github.com/janartist/go-deepseek)** in right-side terminal.
 
 https://github.com/user-attachments/assets/baa05145-a13c-460d-91ce-90129c5b32d7
 
 ## Install
 ```
-go get github.com/go-deepseek/deepseek
+go get github.com/janartist/go-deepseek
 ```
 
 ## Usage
@@ -30,8 +30,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/go-deepseek/deepseek"
-	"github.com/go-deepseek/deepseek/request"
+	"github.com/janartist/go-deepseek"
+	"github.com/janartist/go-deepseek/request"
 )
 
 func main() {
@@ -63,7 +63,7 @@ First, copy above code in `main.go`
 Replace `your_deepseek_api_token` with valid api token
 
 $ go mod init
-$ go get github.com/go-deepseek/deepseek
+$ go get github.com/janartist/go-deepseek
 
 $ go run main.go
 output => Hello! How can I assist you today? 😊

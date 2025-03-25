@@ -10,10 +10,10 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/go-deepseek/deepseek/config"
-	"github.com/go-deepseek/deepseek/internal"
-	"github.com/go-deepseek/deepseek/request"
-	"github.com/go-deepseek/deepseek/response"
+	"github.com/janartist/go-deepseek/config"
+	"github.com/janartist/go-deepseek/internal"
+	"github.com/janartist/go-deepseek/request"
+	"github.com/janartist/go-deepseek/response"
 )
 
 type Client struct { // TODO: VN -- move to internal pkg

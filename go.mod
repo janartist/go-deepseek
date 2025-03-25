@@ -1,6 +1,6 @@
-module github.com/go-deepseek/deepseek
+module github.com/janartist/go-deepseek
 
-go 1.23.4
+go 1.17
 
 require github.com/stretchr/testify v1.10.0
 

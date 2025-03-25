@@ -4,9 +4,9 @@ import (
 	"context"
 	"testing"
 
-	"github.com/go-deepseek/deepseek/fake"
-	"github.com/go-deepseek/deepseek/request"
-	"github.com/go-deepseek/deepseek/response"
+	"github.com/janartist/go-deepseek/fake"
+	"github.com/janartist/go-deepseek/request"
+	"github.com/janartist/go-deepseek/response"
 )
 
 func TestGreeter(t *testing.T) {
