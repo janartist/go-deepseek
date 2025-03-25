@@ -6,8 +6,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/janartist/deepseek"
-	"github.com/janartist/deepseek/request"
+	"github.com/janartist/go-deepseek/request"
 )
 
 func main() {

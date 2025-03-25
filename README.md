@@ -14,7 +14,7 @@ https://github.com/user-attachments/assets/baa05145-a13c-460d-91ce-90129c5b32d7
 
 ## Install
 ```
-go get github.com/janartist/deepseek
+go get github.com/janartist/go-deepseek
 ```
 
 ## Usage
@@ -30,12 +30,12 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/janartist/deepseek"
-	"github.com/janartist/deepseek/request"
+	"github.com/janartist/go-deepseek"
+	"github.com/janartist/go-deepseek/request"
 )
 
 func main() {
-	client, _ := deepseek.NewClient("your_deepseek_api_token")
+	client, _ := go-deepseek.NewClient("your_go-deepseek_api_token")
 
 	chatReq := &request.ChatCompletionsRequest{
 		Model:  deepseek.DEEPSEEK_CHAT_MODEL,
@@ -63,7 +63,7 @@ First, copy above code in `main.go`
 Replace `your_deepseek_api_token` with valid api token
 
 $ go mod init
-$ go get github.com/janartist/deepseek
+$ go get github.com/janartist/go-deepseek
 
 $ go run main.go
 output => Hello! How can I assist you today? 😊

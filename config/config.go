@@ -1,10 +1,10 @@
 package config
 
-// Config for deepseek client.
+// Config for go-deepseek client.
 //
-//	ApiKey - deepseek API key.
-//	TimeoutSeconds - http client timeout used by deepseek client.
-//	DisableRequestValidation - disable request validation by deepseek client.
+//	ApiKey - go-deepseek API key.
+//	TimeoutSeconds - http client timeout used by go-deepseek client.
+//	DisableRequestValidation - disable request validation by go-deepseek client.
 type Config struct {
 	ApiKey                   string
 	TimeoutSeconds           int

@@ -2,17 +2,16 @@ package deepseek
 
 import (
 	"context"
-
-	"github.com/janartist/deepseek/client"
-	"github.com/janartist/deepseek/config"
-	"github.com/janartist/deepseek/request"
-	"github.com/janartist/deepseek/response"
+	"github.com/janartist/go-deepseek/client"
+	"github.com/janartist/go-deepseek/config"
+	"github.com/janartist/go-deepseek/request"
+	"github.com/janartist/go-deepseek/response"
 )
 
 const DEFAULT_TIMEOUT_SECONDS = 120
 
 const (
-	DEEPSEEK_CHAT_MODEL     = "deepseek-chat"
+	DEEPSEEK_CHAT_MODEL     = "go-deepseek-chat"
 	DEEPSEEK_REASONER_MODEL = "deepseek-reasoner"
 )
 

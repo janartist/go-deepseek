@@ -4,8 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/janartist/deepseek"
-	"github.com/janartist/deepseek/request"
+	"github.com/janartist/go-deepseek/request"
 	"github.com/stretchr/testify/assert"
 )
 

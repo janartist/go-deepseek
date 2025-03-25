@@ -3,7 +3,7 @@ package internal_test
 import (
 	"testing"
 
-	"github.com/janartist/deepseek/internal"
+	"github.com/janartist/go-deepseek/internal"
 	"github.com/stretchr/testify/assert"
 )
 

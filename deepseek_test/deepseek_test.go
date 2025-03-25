@@ -5,14 +5,14 @@ import (
 	"embed"
 	"encoding/json"
 	"fmt"
+	"github.com/janartist/go-deepseek"
 	"io"
 	"os"
 	"testing"
 
-	"github.com/janartist/deepseek"
-	"github.com/janartist/deepseek/config"
-	"github.com/janartist/deepseek/request"
-	"github.com/janartist/deepseek/response"
+	"github.com/janartist/go-deepseek/config"
+	"github.com/janartist/go-deepseek/request"
+	"github.com/janartist/go-deepseek/response"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

@@ -1,4 +1,4 @@
-module github.com/janartist/deepseek
+module github.com/janartist/go-deepseek
 
 go 1.17
 
